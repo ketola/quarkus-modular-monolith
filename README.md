@@ -1,8 +1,8 @@
 # Quarkus Modular Monolith
 
-A base project for creating modular monolith architeture with Quarkus.
+A base project for creating modular monolith architecture with Quarkus.
 
-The project is divided in to applications and services:
+The project is divided into applications and services:
 
 applications:
 - example-application

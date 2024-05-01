@@ -29,6 +29,7 @@ public class LoanResource {
     @Path("/")
     @Operation(summary = "Loans")
     public List<LoanResponse> getLoans() {
+        log.debug("getLoans()");
         return loanRequestHandler.getLoans();
     }
 
@@ -36,6 +37,7 @@ public class LoanResource {
     @Path("/")
     @Operation(summary = "Add a loan")
     public LoanResponse addLoan(@Valid AddLoanRequest addLoanRequest) {
+        log.debug("addLoan(addLoanRequest = {})", addLoanRequest);
         return loanRequestHandler.addLoan(addLoanRequest);
     }
 

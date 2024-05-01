@@ -29,6 +29,7 @@ public class BookResource {
     @Path("/")
     @Operation(summary = "Books")
     public List<BookResponse> getBooks() {
+        log.debug("getBooks()");
         return bookRequestHandler.getBooks();
     }
 
@@ -36,6 +37,7 @@ public class BookResource {
     @Path("/")
     @Operation(summary = "Create book")
     public BookResponse addBook(@Valid AddBookRequest createBookRequest) {
+        log.debug("addBook(createBookRequest = {})", createBookRequest);
         return bookRequestHandler.createBook(createBookRequest);
     }
 

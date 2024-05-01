@@ -1,6 +1,6 @@
 create table book
 (
-  id  uuid primary key default gen_random_uuid(),
+  id uuid primary key default gen_random_uuid(),
   name varchar not null
 );
 

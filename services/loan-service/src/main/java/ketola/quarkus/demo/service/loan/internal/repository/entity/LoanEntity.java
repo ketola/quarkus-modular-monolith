@@ -25,7 +25,10 @@ public class LoanEntity {
     @GeneratedValue
     UUID id;
 
-    @Column(name = "name")
-    String name;
+    @Column(name = "book_id")
+    UUID bookId;
+
+    @Column(name = "user_id")
+    UUID userId;
 
 }

@@ -1,4 +1,6 @@
 package ketola.quarkus.demo.service.book.domain;
 
-public record Book(String name) {
+import java.util.UUID;
+
+public record Book(UUID id, String name) {
 }

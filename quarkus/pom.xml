@@ -42,7 +42,7 @@
     <dependencies>
         <dependency>
             <groupId>ketola.quarkus</groupId>
-            <artifactId>example-application</artifactId>
+            <artifactId>library-application</artifactId>
         </dependency>
         <dependency>
             <groupId>ketola.quarkus</groupId>

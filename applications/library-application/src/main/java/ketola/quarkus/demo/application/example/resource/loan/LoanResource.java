@@ -1,5 +1,6 @@
 package ketola.quarkus.demo.application.example.resource.loan;
 
+import io.smallrye.common.annotation.RunOnVirtualThread;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
@@ -21,6 +22,7 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 @Tag(name = "example-loan", description = "Loan")
 @AllArgsConstructor
 @Slf4j
+@RunOnVirtualThread
 public class LoanResource {
 
     private LoanRequestHandler loanRequestHandler;

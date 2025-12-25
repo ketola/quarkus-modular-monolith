@@ -68,3 +68,8 @@ flowchart TD
 
 To start the application locally, run the following command:
 ```mvn clean compile quarkus:dev```
+
+### Build and push the application
+To an AWS ECR repository:
+
+```quarkus build -Dquarkus.container-image.push=true -Dquarkus.container-image.registry=XXXXXXXXXXXX.dkr.ecr.<region>.amazonaws.com```
